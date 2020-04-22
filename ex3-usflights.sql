@@ -25,13 +25,9 @@ GROUP BY colYear, colMonth, Origin
 ORDER BY City, colYear, colMonth ASC; 
 
 /* querie_5: Les companyies amb més vols cancelats, per mesos i any. A més, han d’estar ordenades de forma que les companyies amb més cancel·lacions apareguin les primeres. */
-SELECT UniqueCarrier, colYear, colMonth, Cancelled AS total_cancelled
-FROM flights
-ORDER BY Cancelled DESC, colYear ASC, colMonth;
-
 SELECT UniqueCarrier, colYear, colMonth, SUM(Cancelled) AS total_cancelled
 FROM flights
-GROUP BY colMonth, colYear
+GROUP BY UniqueCarrier, colMonth, colYear
 ORDER BY total_cancelled DESC;
 
 /* querie_6: L’identificador dels 10 avions que més distància han recorregut fent vols. */
