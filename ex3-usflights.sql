@@ -31,11 +31,6 @@ ORDER BY Cancelled DESC, colYear ASC, colMonth;
 
 SELECT UniqueCarrier, colYear, colMonth, SUM(Cancelled) AS total_cancelled
 FROM flights
-GROUP BY colYear, colMonth
-ORDER BY total_cancelled DESC;
-
-SELECT UniqueCarrier, colYear, colMonth, SUM(Cancelled) AS total_cancelled
-FROM flights
 GROUP BY colMonth, colYear
 ORDER BY total_cancelled DESC;
 
