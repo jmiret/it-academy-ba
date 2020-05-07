@@ -57,14 +57,6 @@ public class Fase_3 {
 						
 		marcaRoda = JOptionPane.showInputDialog("Marca de la roda: ");
 		
-		/*
-		System.out.println(vehiculo);
-		if (vehiculo.equals("Car")) 
-			System.out.println("Car");
-		else
-			System.out.println("Bike");			
-		*/
-		
 		// Validamos diámetro ruedas delanteras		
 		do {
 			diametre = Float.parseFloat(JOptionPane.showInputDialog("Diàmetre de la roda. Format (de 0.4\" a 4.0\"): "));
