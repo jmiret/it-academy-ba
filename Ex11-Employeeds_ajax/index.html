@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ex11-Employeeds - jQuery Ajax</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <h3 class="monospace">Ex11-Employeeds - jQuery Ajax</h3>
+
+    <form> 
+        <input type="text" id="employeeID" style="width: 150px; margin: 5px;" class="monospace" />
+        <span style="width: 160px; margin-left: 5px; margin-bottom: 0px;" class="monospace">:ID</span><br>           
+        <input type="text" id="name" style="width: 150px; margin: 5px;" class="monospace" />
+        <span style="width: 160px; margin-left: 5px; margin-bottom: 0px;" class="monospace">:Name</span><br>
+        <input type="text" id="surname" style="width: 150px; margin: 5px;" class="monospace" />
+        <span style="width: 160px; margin-left: 5px; margin-bottom: 0px;" class="monospace">:Surname</span><br>
+        <input type="text" id="role" style="width: 150px; margin: 5px;" class="monospace" />
+        <span style="width: 160px; margin-left: 5px; margin-bottom: 0px;" class="monospace">:Role</span><br>
+        <input type="button" onclick="createEmployee();" value="Create Employee" style="width: 160px; margin: 5px;" class="monospace" />
+        <input type="button" onclick="readerEmployee();" value="Reader Employee" style="width: 160px; margin: 5px;" class="monospace" /><br>
+        
+        <input type="button" onclick="updateEmployee();" value="Update Employee" style="width: 160px; margin: 5px;" class="monospace" />                      
+        <input type="button" onclick="deleteEmployee();" value="Delete Employee" style="width: 160px; margin: 5px;" class="monospace" /><br>           
+        <input type="button" onclick="allEmployeeds();" value="All Employeeds" style="width: 160px; margin: 5px;" class="monospace" />           
+        <input type="button" onclick="employeedsByRole();" value="Employeeds by Role" style="width: 160px; margin: 5px;" class="monospace" /><br>          
+
+    </form>    
+
+    <p></p>
+
+    <h4 class="monospace">Show Data</h4>
+    <div id="showData" class="monospace"></div>
+    <div id="showData_1" class="monospace"></div>
+   
+    <script src="vendors/jquery-3.5.1.js"></script>
+    <script src="lib/main.js"></script>
+    
+</body>
+
+</html>
